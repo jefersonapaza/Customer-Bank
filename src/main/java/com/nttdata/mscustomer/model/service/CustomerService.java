@@ -1,7 +1,6 @@
-package com.nttdata.mscustomer.service;
+package com.nttdata.mscustomer.model.service;
 
-import com.nttdata.mscustomer.model.Customer;
-import com.nttdata.mscustomer.model.TypeCustomer;
+import com.nttdata.mscustomer.model.document.Customer;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

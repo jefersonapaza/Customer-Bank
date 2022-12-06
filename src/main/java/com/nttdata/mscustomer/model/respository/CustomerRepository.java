@@ -1,6 +1,6 @@
-package com.nttdata.mscustomer.repository;
+package com.nttdata.mscustomer.model.respository;
 
-import com.nttdata.mscustomer.model.Customer;
+import com.nttdata.mscustomer.model.document.Customer;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import reactor.core.publisher.Flux;
 

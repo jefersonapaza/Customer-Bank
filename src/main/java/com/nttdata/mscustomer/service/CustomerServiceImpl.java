@@ -1,9 +1,8 @@
-package com.nttdata.mscustomer.service.impl;
+package com.nttdata.mscustomer.service;
 
-import com.nttdata.mscustomer.model.Customer;
-import com.nttdata.mscustomer.model.TypeCustomer;
-import com.nttdata.mscustomer.repository.CustomerRepository;
-import com.nttdata.mscustomer.service.CustomerService;
+import com.nttdata.mscustomer.model.document.Customer;
+import com.nttdata.mscustomer.model.respository.CustomerRepository;
+import com.nttdata.mscustomer.model.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

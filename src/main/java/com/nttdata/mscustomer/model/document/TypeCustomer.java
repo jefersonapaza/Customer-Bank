@@ -1,4 +1,4 @@
-package com.nttdata.mscustomer.model;
+package com.nttdata.mscustomer.model.document;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +15,9 @@ public class TypeCustomer {
 
     EnumTypeCustomer value;
 
+    SubType subType;
+
     public enum EnumTypeCustomer {
-        PERSONAL, EMPRESARIAL
+        PERSONAL, BUSINESS
     }
 }

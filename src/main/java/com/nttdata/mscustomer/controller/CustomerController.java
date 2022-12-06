@@ -1,7 +1,7 @@
 package com.nttdata.mscustomer.controller;
 
-import com.nttdata.mscustomer.model.Customer;
-import com.nttdata.mscustomer.service.CustomerService;
+import com.nttdata.mscustomer.model.document.Customer;
+import com.nttdata.mscustomer.model.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

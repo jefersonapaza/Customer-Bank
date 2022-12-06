@@ -1,4 +1,4 @@
-package com.nttdata.mscustomer.model;
+package com.nttdata.mscustomer.model.document;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,9 +13,9 @@ public class TypeDocument {
     @Id
     String id;
 
-    TypeDocument.EnumDocumentType value;
+    EnumTypeDocument value;
 
-    public enum EnumDocumentType {
-        DNI, RUC
+    public enum EnumTypeDocument {
+        DNI, RUC, CE
     }
 }
