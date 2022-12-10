@@ -8,9 +8,3 @@ spring:
       #uri: http://localhost:8888
       #name: root
       #password: s3cr3t
-  data:
-    mongodb:
-      port: 27019
-      auto-index-creation: 'true'
-      database: bankaccountdb
-      host: localhost
