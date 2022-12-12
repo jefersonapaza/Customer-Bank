@@ -1,7 +1,9 @@
 package com.nttdata.mscustomer.controller;
 
+import com.nttdata.mscustomer.dto.external.AccountDTO;
 import com.nttdata.mscustomer.model.document.Customer;
 import com.nttdata.mscustomer.model.service.CustomerService;
+import com.nttdata.mscustomer.service.external.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +17,9 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
+
+    @Autowired
+    private AccountService accountService;
 
     @PostMapping("/insert")
     @ResponseStatus(HttpStatus.CREATED)
@@ -49,4 +54,11 @@ public class CustomerController {
     public Mono<Customer> findNumber(@PathVariable String number){
         return customerService.findByDocumentNumber(number);
     }
+
+    @GetMapping("/getAllProductsByCustomer/{id_customer}")
+    public Flux<ResponseEntity<AccountDTO>> getAllProductsByCustomer(@PathVariable String id_customer){
+        return accountService.findAllByIdCustomer(id_customer).map(aldto -> new  ResponseEntity<>(aldto , HttpStatus.ACCEPTED));
+    }
+
+
 }
